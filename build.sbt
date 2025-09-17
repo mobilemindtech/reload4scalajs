@@ -20,7 +20,7 @@ lazy val root = (project in file("."))
     sbtPlugin := true,
     libraryDependencies ++= Seq(
       "com.lihaoyi" %% "cask" % "0.10.2",
-      "com.lihaoyi" %% "upickle" % "4.0.2",
+      "com.lihaoyi" %% "upickle" % "4.3.2",
     ),
     credentials ++= Seq(
       Credentials(Path.userHome / ".sbt" / "sonatype_credentials"),
