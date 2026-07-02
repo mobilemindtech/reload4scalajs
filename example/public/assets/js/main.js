@@ -1087,7 +1087,7 @@ function $h_Lbr_com_mobilemind_Main$package$() {
 }
 $h_Lbr_com_mobilemind_Main$package$.prototype = $c_Lbr_com_mobilemind_Main$package$.prototype;
 $c_Lbr_com_mobilemind_Main$package$.prototype.main__sci_Seq__V = (function(args) {
-  document.getElementById("app").innerHTML = "Hello World!!";
+  document.getElementById("app").innerHTML = "Hello World";
 });
 var $d_Lbr_com_mobilemind_Main$package$ = new $TypeData().initClass($c_Lbr_com_mobilemind_Main$package$, "br.com.mobilemind.Main$package$", ({
   Lbr_com_mobilemind_Main$package$: 1

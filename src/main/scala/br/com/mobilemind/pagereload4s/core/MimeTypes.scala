@@ -1,4 +1,4 @@
-package br.com.mobilemind.r4sjs.core
+package br.com.mobilemind.pagereload4s.core
 
 object MimeTypes {
   val defaultMimeType = "application/octet-stream"

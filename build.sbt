@@ -6,21 +6,17 @@ version          := "0.3.0"
 organization     := "br.com.mobilemind"
 organizationName := "Mobild Mind"
 organizationHomepage := Some(url("https://www.mobilemind.com.br"))
-description := "Live Reload for ScalaJS"
+description := "Page Reload for Scala"
 //sonatypeCredentialHost := "s01.oss.sonatype.org"
-
+isSnapshot := true
 
 lazy val root = (project in file("."))
+  .enablePlugins()
   .settings(
-    name := "reload4scalajs",
+    name := "pagereload4s",
     sbtPlugin := true,
     libraryDependencies ++= Seq(
-      "com.lihaoyi" %% "cask" % "0.11.3",
-      "com.lihaoyi" %% "upickle" % "4.4.3",
-    ),
-    //credentials ++= Seq(
-    //  Credentials(Path.userHome / ".sbt" / "sonatype_credentials"),
-    //  Credentials(Path.userHome / ".sbt" / "sonatype_gpg")
-    //)
+      "io.undertow" % "undertow-core" % "2.4.1.Final"
+    )
 )
   .settings(addSbtPlugin("org.scala-js" %% "sbt-scalajs" % "1.22.0"))
