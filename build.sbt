@@ -16,7 +16,7 @@ lazy val root = (project in file("."))
     name := "pagereload4s",
     sbtPlugin := true,
     libraryDependencies ++= Seq(
-      "io.undertow" % "undertow-core" % "2.4.1.Final"
+      "io.undertow" % "undertow-core" % "2.4.2.Final"
     )
 )
   .settings(addSbtPlugin("org.scala-js" %% "sbt-scalajs" % "1.22.0"))
